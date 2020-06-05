@@ -1,0 +1,122 @@
+/* Base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/* **********NAVBAR stuff************* 
+  font-family: 'Montserrat', sans-serif;
+  weights: Extra-light 200
+  Light 300
+  Regular 400
+  Semi-bold 600
+  Bold 700
+  
+  */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.logo img,
+.account img {
+  width: 32px;
+}
+
+.account img {
+  border-radius: 50%;
+}
+/* For search bar styling, followed:
+https://www.mikedane.com/web-development/css/styling-search-bar/ */
+.search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 25%;
+  padding: 2px 23px 2px 30px;
+  outline-color: transparent;
+  position: relative;
+  display: flex;
+  background-color: white;
+  max-width: 25;
+}
+.search-icon {
+  position: absolute;
+  left: 8px;
+  width: 14px;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: 0;
+  width: 100%;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration-line: none;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+.nav-links {
+  display: none;
+}
+
+/* dropdown -leave for tmrw- */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.navbar-links {
+  display: none;
+}
+.navbar-links.active {
+  display: flex;
+}
+/* toggle button arrow */
+.drop-btn img {
+  width: 10px;
+}
+
+/* rest of page */
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* desktop */
+@media (min-width: 600px) {
+  /* body */
+  /* layout */
+  /* block */
+  .nav-links {
+    display: inline-block;
+  }
+  .dropdown img {
+    display: none;
+  }
+}
